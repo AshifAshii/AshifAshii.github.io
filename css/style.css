@@ -301,6 +301,17 @@ section.resume-section .resume-item .resume-date {
   margin: 0 0 15px;
 }
 
+.portfolio-item {
+  padding: 10px;
+  margin: 50px;
+}
+
+.portfolio-item:hover {
+  background-color: #00090f;
+  opacity: 0.7;
+  border-radius: 20%;
+}
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -317,7 +328,7 @@ section.resume-section .resume-item .resume-date {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(54, 160, 245, 0.73);
+  /* background: rgba(54, 160, 245, 0.73); */
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port:hover {
