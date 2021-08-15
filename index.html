@@ -590,6 +590,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <input
                   type="text"
                   name="full-name"
+                  id="name"
                   placeholder="Full Name"
                   class="form-control"
                   style="background: transparent"
@@ -599,6 +600,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <input
                   type="text"
                   name="email"
+                  id="mail"
                   placeholder="Email Id"
                   class="form-control"
                   style="background: transparent"
@@ -608,6 +610,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <input
                   type="text"
                   name="subject"
+                  id="subject"
                   placeholder="Subject"
                   class="form-control"
                   style="background: transparent"
@@ -615,13 +618,18 @@ License URL: https://creativecommons.org/licenses/by/4.0/
               </div>
               <div class="col-md-12">
                 <textarea
-                  name=""
-                  id=""
+                  name="content"
+                  id="content"
                   style="background: transparent"
                 ></textarea>
               </div>
               <div class="col-md-12 sub-but">
-                <button class="btn btn-general btn-white" role="button">
+                <button
+                  id="sendDetails"
+                  class="btn btn-outline-primary"
+                  style="cursor: pointer"
+                  role="button"
+                >
                   Send
                 </button>
               </div>
@@ -1424,7 +1432,30 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         </div>
       </div>
     </div>
-
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+             <h5 style="color: aqua;">Your feed successfully submitted!</h5>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Done
+            </button>
+         
+          <!-- <div class="modal-body">
+           
+          </div> -->
+          <!-- <div class="modal-footer">
+          </div> -->
+        </div>
+      </div>
+    </div>
     <!-- Global javascript -->
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -1432,6 +1463,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <script src="js/counter/jquery.waypoints.min.js"></script>
     <script src="js/counter/jquery.counterup.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/utils.js"></script>
     <script>
       $(document).ready(function () {
         $(".filter-b").click(function () {
@@ -1464,4 +1496,10 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       });
     </script>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 </html>
