@@ -27,6 +27,55 @@ body {
   background-color: #323aa1;
 }
 
+/*==================================================
+                  HEADER SECTION
+====================================================*/
+.container-head {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.left-align-content {
+  text-align: left !important;
+}
+.top-left {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+
+.middle-left {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1,
 h2,
 h3,
@@ -41,7 +90,7 @@ h6 {
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem;
+  /* line-height: 5.5rem; */
 }
 
 h2 {
@@ -252,6 +301,8 @@ section.resume-section .resume-item .resume-date {
 ====================================================*/
 #about {
   background-image: url(../img/profile-banner.jpg);
+  max-width: 100%;
+  height: auto;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -478,6 +529,7 @@ section.resume-section .resume-item .resume-date {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .skill-cover h3 {
@@ -853,4 +905,80 @@ section.resume-section .resume-item .resume-date {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.res-name {
+  font-size: 6vw;
+}
+
+.res-quote {
+  font-size: 2.5vw;
+}
+
+.res-road {
+  font-size: 3vw;
+}
+
+.res-logo {
+  height: 14vw;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .res-name {
+    font-size: 11vw;
+  }
+
+  .res-quote {
+    font-size: 5vw;
+  }
+
+  .res-road {
+    font-size: 4vw;
+    color: black !important;
+  }
+
+  .res-logo {
+    height: 20vw;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .res-name {
+    font-size: 6vw;
+  }
+
+  .res-quote {
+    font-size: 2.5vw;
+  }
+
+  .res-road {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  .res-name {
+    font-size: 6vw;
+  }
+
+  .res-quote {
+    font-size: 2.5vw;
+  }
+
+  .res-road {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 1200px) {
+  .res-name {
+    font-size: 6vw;
+  }
+
+  .res-quote {
+    font-size: 2.5vw;
+  }
+
+  .res-road {
+    font-size: 3vw;
+  }
 }
