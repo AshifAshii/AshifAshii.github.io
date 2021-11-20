@@ -18,7 +18,7 @@ skillItems.click(function () {
 
 const postDetails = () => {
   axios
-    .post("https://folioback.darkman.tech/adduser", {
+    .post("https://folioback.infidark.com/adduser", {
       name: $("#name").val(),
       mail: $("#mail").val(),
       subject: $("#subject").val(),
